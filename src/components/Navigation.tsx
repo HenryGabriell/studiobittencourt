@@ -23,7 +23,7 @@ export const Navigation = () => {
       className="absolute top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
     >
       <div className="container mx-auto px-4 py-4 flex justify-end items-center">
-        <ul className="flex gap-6 text-sm font-medium">
+        <ul className="hidden md:flex gap-6 text-sm font-medium">
           <li>
             <button
               onClick={() => scrollToSection("servicos")}
