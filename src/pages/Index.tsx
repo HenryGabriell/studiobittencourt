@@ -55,8 +55,8 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <ScrollReveal delay={100}>
-              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-8 text-center">
+              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-20 h-20 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                     <Heart className="w-10 h-10 text-primary" />
                   </div>
@@ -69,8 +69,8 @@ const Index = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
-              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-8 text-center">
+              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-20 h-20 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                     <Sparkles className="w-10 h-10 text-primary" />
                   </div>
@@ -83,8 +83,8 @@ const Index = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={300}>
-              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-8 text-center">
+              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-20 h-20 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                     <Star className="w-10 h-10 text-primary" />
                   </div>
@@ -97,8 +97,8 @@ const Index = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={400}>
-              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-8 text-center">
+              <Card className="bg-card hover:shadow-xl transition-all duration-300 border-0 group h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
+                <CardContent className="p-8 text-center h-full flex flex-col">
                   <div className="w-20 h-20 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                     <Gem className="w-10 h-10 text-primary" />
                   </div>
@@ -205,13 +205,13 @@ const Index = () => {
             </div>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
             <ScrollReveal delay={100}>
               <Card className="bg-card border-0 h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-10 h-full flex flex-col">
-                  <h3 className="text-3xl font-bold mb-8 text-foreground">Informações de Contato</h3>
+                <CardContent className="p-6 md:p-10 h-full flex flex-col">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-foreground">Informações de Contato</h3>
                   
-                  <div className="space-y-8 flex-1">
+                  <div className="space-y-6 md:space-y-8 flex-1">
                     <div className="flex gap-4">
                       <div className="w-14 h-14 rounded-full bg-accent/30 flex items-center justify-center flex-shrink-0">
                         <MapPin className="w-6 h-6 text-primary" />
@@ -254,29 +254,20 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-
-                  <Button 
-                    size="lg" 
-                    className="w-full text-lg py-6 rounded-xl shadow-lg mt-8"
-                    style={{ background: 'var(--gradient-accent)' }}
-                  >
-                    Agendar pelo WhatsApp
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
                 </CardContent>
               </Card>
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
               <Card className="bg-card border-0 h-full" style={{ boxShadow: 'var(--shadow-card)' }}>
-                <CardContent className="p-10 h-full flex flex-col">
-                  <h3 className="text-3xl font-bold mb-6 text-foreground">Agende seu Horário</h3>
+                <CardContent className="p-6 md:p-10 h-full flex flex-col">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">Agende seu Horário</h3>
                   
-                  <p className="text-muted-foreground mb-8 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                     Reserve seu momento de beleza e autocuidado. Agende seu horário pelo WhatsApp ou Instagram e venha viver uma experiência única no Studio Bittencourt.
                   </p>
 
-                  <ul className="space-y-3 flex-1">
+                  <ul className="space-y-3 flex-1 mb-6 md:mb-8">
                     <li className="flex items-center gap-3 text-muted-foreground">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
                       Atendimento personalizado e exclusivo
@@ -290,6 +281,15 @@ const Index = () => {
                       Ambiente acolhedor e confortável
                     </li>
                   </ul>
+
+                  <Button 
+                    size="lg" 
+                    className="w-full text-lg py-6 rounded-xl shadow-lg"
+                    style={{ background: 'var(--gradient-accent)' }}
+                  >
+                    Agendar pelo WhatsApp
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </CardContent>
               </Card>
             </ScrollReveal>
